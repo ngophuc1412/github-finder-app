@@ -1,12 +1,12 @@
 import React from 'react';
-import UserResults from "../users/UserResults";
+// import UserResults from "../users/UserResults";
 import UserSearch from "../users/UserSearch";
 
 function Home(props) {
     return (
         <div>
             <UserSearch />
-            <UserResults />
+{/*             <UserResults /> */}
         </div>
     );
 }
