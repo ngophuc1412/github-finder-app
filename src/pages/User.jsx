@@ -1,5 +1,6 @@
-import { useContext, useEffect, useParams  } from 'react'
-import GithubContext from '../../context/github/GithubContext'
+import { useContext, useEffect  } from 'react'
+import {useParams } from 'react-router-dom'
+import GithubContext from '../context/github/GithubContext'
 
 function User() {
     const {user, getUser} = useContext(GithubContext)
