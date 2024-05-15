@@ -8,6 +8,9 @@ import Alert from "./components/layouts/Alert"
 import NotFound from "./pages/NotFound"
 import {GithubProvider} from "./context/github/GithubContext"
 import {AlertProvider} from "./context/alert/AlertContext"
+import TestUseMemo from "./test_ne/TestUseMemo";
+import TestUseCallback from "./test_ne/TestUseCallback";
+import TestUseRef from "./test_ne/TestUseRef";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
               <div className="flex flex-col justify-between h-screen">
                   <Navbar />
                   <main className="container mx-auto px-3 pb-12">
+                      <TestUseMemo />
+                      <TestUseCallback />
+                      <TestUseRef />
                       <Alert />
                       <Routes>
                           <Route path='/' element={<Home />} />
